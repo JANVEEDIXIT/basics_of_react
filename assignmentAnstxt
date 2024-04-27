@@ -1,0 +1,62 @@
+1. What is Emmet?
+
+It comes pre-installed in VS Code and allows you to write your code quickly. If you’re working in your VS Code editor for the first time and you want to begin writing code, you need to start with HTML, where the building blocks of code are formed.
+
+To get started, you need the boilerplate statement, which contains the meta element, doctype, title element, body element, etc. The Emmet abbreviation saves us the time and effort of writing all of these statements one at a time by generating the boilerplate automatically. All we have to do is use shift +, and voila, we have everything set up for us in seconds.
+
+2. What is difference between Library and Framework?
+
+Library : Library is a set of codes (in Read Only) which are previously written and can be called upon when building our own code. Is written in a language. We can use different libraries as well with this. Don't provide restructions (axios can be used for rest api calls)
+
+Framework : Frameworks are a foundation which provide a set of tools and elements that help speed of the development process it acts like a template that can be used and modified as per our development needs. It is written on top of a language. Provides more restructions
+
+3. What is CDN? Why do we use it?
+
+A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users / a group of geographically distributed servers that speed up the delivery of web content by bringing it closer to the location of the users accessing the content. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
+
+The primary purpose of a CDN is to reduce latency, or reduce the delay in communication created by a network's design.
+Your website would need a CDN in the following cases: Your website visitors come from across the world and so you want to reduce time for website pages to load. Your website traffic spikes can be unpredictable & very high, and so you need to serve cached pages so that your server does not get overloaded & crash.
+
+CDNs are especially well-suited to defending websites from denial-of-service (DoS) and distributed denial-of-service (DDoS) attacks. In these attacks, an attacker directs vast quantities of junk network traffic at a website to try to overwhelm and crash the website.
+
+4. Why is React know as React?
+
+React is called React because it reacts only when there are changes in the component's state or props.
+It "reacts" quickly to changes without reloading the whole page. It uses the virtual DOM to efficiently update parts of a webpage. It's built around components that "react" and update.
+The name “React” reflects this reactive nature of the library.
+
+5. What is crossorigin in script tag?
+
+Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
+
+The crossorigin attribute sets the mode of the request to an HTTP CORS Request. Web pages often make requests to load resources on other servers. Here is where CORS comes in. A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+
+The crossorigin attribute, valid on the <audio> , <img> , <link> , <script> , and <video> elements, provides support for CORS, defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for the elements fetched data.
+
+6. What is diference between React and ReactDOM?
+
+a. React:
+i. Let’s create reusable pieces of UI called components.
+ii. Helps you build user interfaces (UIs) in JavaScript.
+iii. Makes it easy to update and show UI changes based on data.
+
+b. React DOM:
+i. Specifically deals with showing React components on web pages.
+ii. Without ReactDOM, React wouldn’t know how to display things on a web page.
+iii. Takes care of connecting your React code to the actual HTML on a webpage.
+
+-> React is like the architect who designs how things should look, and ReactDOM is the construction worker who puts those designs into action on a website. If you're building web pages with React, you use both React and ReactDOM.
+
+7. What is difference between react.development.js and react.production.js files via CDN?
+
+i. react.development.js - More developer friendly, readable, will take more size.
+ii. react.production.js - Minified code that is not developer friendly as it focused on decreasing in file size, code efficiency.
+iii. CDN is the Content Delivery Network that provides you with the respective JS file online.
+
+In development mode, we can enable and utilize React developer tools, devtools profiler, debugging environment attached with source code. We can utilize various functionalities such as Hot Module Replacement, diagnostics so that development environment will help to debug code.
+
+In production mode, compression and minification of Javascript and other resources happens to reduce size of the code which is not the case when it comes to development mode. Performance will be much faster in production mode when compared to development mode.
+
+8. What is async and defer?
+
+Order of Execution: async scripts execute as soon as they are downloaded, which is not necessarily in the order in which they appear in the document. defer, on the other hand, preserves the order and ensures that scripts execute after the document has been parsed.![alt text](asyncDefer.jpg)
